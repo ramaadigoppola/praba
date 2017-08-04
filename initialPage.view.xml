@@ -2,7 +2,39 @@
 		controllerName="pdfconverter.initialPage" xmlns:html="http://www.w3.org/1999/xhtml">
 	<Page title="Title">
 		<content>
-	
+	<Table>
+		<headerToolbar>
+			<Toolbar>
+				<Title text="Testing Pdf" level="H2"/>
+                <ToolbarSpacer></ToolbarSpacer>
+                <Button text = "Download Pdf" press = "onPdfDOwnload"/>
+			</Toolbar>
+		</headerToolbar>
+		<columns>
+			<Column>
+				<Text text="a" />
+			</Column>
+			<Column>
+				<Text text="b" />
+			</Column>
+			<Column>
+				<Text text="c" />
+			</Column>
+			<Column>
+				<Text text="d" />
+			</Column>
+		</columns>
+		<items>
+			<ColumnListItem vAlign="Middle" type="Navigation">
+				<cells>
+					<Text text="row1" />
+                    <Text text="row1" />
+                    <Text text="row1" />
+                    <Text text="row1" />
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
 		</content>
 	</Page>
 </core:View>

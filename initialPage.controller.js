@@ -34,5 +34,24 @@ sap.ui.controller("pdfconverter.initialPage", {
 //	onExit: function() {
 //
 //	}
+onPdfDOwnload:function(oEvnt){
+    var doc = new jsPDF();
+    var a = "row1";
+doc.setFontSize(30);
+ doc.text(50, 35, 'Testing Pdf ');
 
+doc.setFontSize(14);
+ doc.text(20, 60, 'a: ' + a);
+ doc.setFontSize(14);
+ doc.text(20, 80, 'b: ' + a);
+ doc.setFontSize(14);
+ doc.text(20, 100, 'c: ' + a);
+doc.setFontSize(14);
+ doc.text(20, 100, 'd: ' + a);
+
+doc.save('testing.pdf');
+
+}
+    
+    
 });

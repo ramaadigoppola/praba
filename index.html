@@ -3,16 +3,17 @@
 	<head>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
-
-		<script src="resources/sap-ui-core.js"
+<!--src="resources/sap-ui-core.js"-->
+		<script 
+                src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
 				id="sap-ui-bootstrap"
 				data-sap-ui-libs="sap.m"
 				data-sap-ui-theme="sap_bluecrystal">
 		</script>
 		<!-- only load the mobile lib "sap.m" and the "sap_bluecrystal" theme -->
-
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.2.61/jspdf.debug.js"></script>
 		<script>
-				sap.ui.localResources("pdfconverter");
+                sap.ui.localResources("pdfconverter");
 				var app = new sap.m.App({initialPage:"idinitialPage1"});
 				var page = sap.ui.view({id:"idinitialPage1", viewName:"pdfconverter.initialPage", type:sap.ui.core.mvc.ViewType.XML});
 				app.addPage(page);
